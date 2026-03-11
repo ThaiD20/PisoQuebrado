@@ -1,0 +1,21 @@
+ganhou = 0 // se for 1, perdeu. Se for 0, ganhou
+for(let rodada = 1; rodada <= 3; rodada++) {
+  console.log ("Rodada: " + rodada)
+
+   jogador = prompt ("Nivel "+ rodada+ "escolha um vidro 1/2/3?")
+   pisoQuebrado = Math.floor(Math.random()*3) + 1;
+   
+  if(jogador == pisoQuebrado){
+    // Escolheu o piso quebrado
+    alert("Vidro QUEBROU, fim de jogo")
+    rodada = 1000
+    ganhou = 1
+   }
+  else {
+    alert("Passou! Estava em: " + pisoQuebrado )
+  }
+
+  }
+if(ganhou = 0) {
+  alert ("VOCÊ VENCEU!! PARABENS")
+}
